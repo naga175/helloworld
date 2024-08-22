@@ -1,0 +1,21 @@
+apiVersion: v1 
+
+kind: Service 
+
+metadata: 
+
+  name: naga-deployment
+
+spec: 
+
+  selector: 
+
+    app: node_na
+
+  ports: 
+
+  - protocol: TCP 
+
+    port: 80 
+
+    targetPort: 80
